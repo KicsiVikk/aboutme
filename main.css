@@ -4,20 +4,29 @@
   margin: 0;
   padding: 0;
   box-sizing:content-box;
-  font-family: 'Stylish', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
 	font-size: 100%;
 }
 
 /* Pozícionálás */
 
+.card {
+margin-top: 30px;
+	margin-left: 20%;
+	width: 480px;
+  max-width: calc(100vw - 10px);
+	height: 600px;
+	background-color: aquamarine;
+	z-index: 1;
+}
 .profile-card {
-	position: fixed;
- margin-top: -30%;
-	margin-left: 40%;
+  position: absolute;
+ margin-top: 25%;
+	margin-right: 40%;
 	 width: 200vw;
 	height:800px; 
+	
 }
-
 body {
   display: flex;
   justify-content: right;
@@ -28,7 +37,7 @@ body {
 }
 
 .head, .links {
-  text-align: center;
+  text-align: left;
 }
 
 .head, .content {
@@ -42,6 +51,7 @@ img {
   border-radius: 50%;
 }
 .profile-image {
+	position: relative;
   margin-top: -60rem;
 	margin-left: 10rem;
 }
@@ -57,11 +67,13 @@ li {
 }
 
 .head, .about {
-  margin-bottom: 10%;
+  margin-bottom: 40%;
+	margin-right: 20%;
+	text-align: left;
 }
 
 .content {
-  padding: 5% 10%;
+  padding: 10% 10%;
 }
 
 body {
@@ -81,7 +93,7 @@ img {
   filter: grayscale(50%);
 }
 .content {
-  border-top: 1px solid hsla(0, 0%, 30%, .8);
+  border-top: 5px solid hsla(0, 0%, 30%, .8);
 }
 img:hover {
   transform: scale(1.1);
@@ -90,21 +102,32 @@ img:hover {
 .link {
   color: rgb(35, 107, 35);
 } 
+/*Reszponziv
 @media (min-width: 768px) {
-.profile-card {
-	position: fixed;
- margin-top: 18%;
-	margin-left: 40%;
-	 width: 250vw;
-	height:800px; 
+.card {
+margin-top: ;
+	margin-left: 20%;
+	width: 480px;
+  max-width: calc(100vw - 10px);
+	height: 600px;
+	background-color: aquamarine;
+	z-index: 1;
 }
+.profile-card {
+  position: fixed;
+ margin-top: -30%;
+	margin-left: 40%;
+	 width: 200vw;
+	height:800px; 
 	img {
    height: 400px;
 		width: 300px;
   border-radius: 50%;
 }
 .profile-image {
-  margin-top: 0rem;
+  position: relative;
+  margin-top: -60rem;
 	margin-left: 10rem;
 }
 }
+*/
